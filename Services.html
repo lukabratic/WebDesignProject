@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+    <!-- Meta tag for keywords  -->
+    <meta name="keywords" content="Home" >
+    <!-- Meta tag for description  -->
+    <meta name="description" content="Home Page" >
+    <!--External Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="Main.js"></script>
+    <script src="Services.js"></script>
+</head>
+
+
+<body>
+
+<!-- Header -->
+<header id="header">
+    <div class="inner">
+        <a href="index.html" class="logo">Marko Lukic Beauty</a>
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="Services.html">Services</a>
+            <a href="Reviews.html">Customer Reviews</a>
+            <a href="Support.html">Support</a>
+        </nav>
+    </div>
+</header>
+
+<section id="main" class="inner">
+    <!-- Header w/ image of how service looks like -->
+    <h3 class="align-center">Make An Appointment</h3>
+    <div class="img">
+        <img src="ServicesPic.jpg" alt="" />
+    </div>
+
+    <!-- Tabs HTML code -->
+    <div id="tabs">
+        <h3>What are the current hours of operation?</h3>
+        <div id="tabs-1">
+            <p>Saturday, Sunday, 9:00 AM - 9:00 PM</p>
+        </div>
+        <h3>How long is the procedure usually?</h3>
+        <div id="tabs-2">
+            <p>The procedure will last about 1 hour.</p>
+        </div>
+        <h3>How do I become certified in winner filler therapy?</h3>
+        <div id="tabs-3">
+            <p>You can get a certification at our salon, and it takes about 10-20 hours a week for 3 months. Please contact us for more details.</p>
+        </div>
+    </div>
+
+
+    <!-- Form for buying a service -->
+    <form method="post" action="#">
+        <div>
+            <div>
+                <input type="text" name="name" id="name" value="" placeholder="Name" required/>
+            </div>
+            <div>
+                <input type="email" name="email" id="email" value="" placeholder="Email" required/>
+            </div>
+            <div>
+                <input type="text" name="phone" id="phone" placeholder="123-456-7890" required/>
+            </div>
+            <div>
+                <div class="select-wrapper">
+                    <select name="category" id="category">
+                        <option value="">- Services -</option>
+                        <option value="1">1 Treatment - $30 (60 minutes per treatment)</option>
+                        <option value="2">6 Treatments - $150 (60 minutes per treatment)</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <textarea name="message" id="message" placeholder="Comments/Notes/Questions here" rows="6" required></textarea>
+            </div>
+            <div>
+                <input type="submit" id="submit" value="Send Message" class="special" />
+            </div>
+        </div>
+    </form>
+</section>
+</body>
+</html>
